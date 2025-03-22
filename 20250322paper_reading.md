@@ -1,12 +1,10 @@
-以下是按照你的要求，将每个表格中的标题列翻译成中文，并新增一列翻译后的中文标题，且保持原来的格式不被修改，内容和原来保持一致：
-
 ### 自动驾驶中的预测与规划
 - **轨迹预测**
 
 |序号|作者|标题|发表情况|中文标题|
 | ---- | ---- | ---- | ---- | ---- |
 |16|Z. Zhou, J. Wang, Y.-H. Li, Y.-K. Huang|“Query-centric trajectory prediction”|Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023, pp. 17 863–17 873|以查询为中心的轨迹预测|
-|2|Y. Chen, S. Tonkens, M. Pavone|“Categorical traffic transformer: Interpretable and diverse behavior prediction with tokenized latent”|arXiv preprint arXiv:2311.18307, 2023|分类交通变换器：基于标记化潜在表示的可解释且多样的行为预测|
+|2|Y. Chen, S. Tonkens, M. Pavone|“Categorical traffic transformer: Interpretable and diverse behavior prediction with tokenized latent”|arXiv preprint arXiv:2311.18307, 2023|分类交通Transformer：基于标记化潜在表示的可解释且多样的行为预测|
 |22|P. Tran, H. Wu, C. Yu, P. Cai, S. Zheng, D. Hsu|“What truly matters in trajectory prediction for autonomous driving?”|arXiv preprint arXiv:2306.15136, 2023|自动驾驶中轨迹预测真正重要的因素是什么？|
 |21|S. Shi, L. Jiang, D. Dai, B. Schiele|“Mtr++: Multi-agent motion prediction with symmetric scene modeling and guided intention querying”|IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024|Mtr++：基于对称场景建模和引导意图查询的多智能体运动预测|
 
