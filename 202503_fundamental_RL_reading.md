@@ -7,4 +7,6 @@ RL fundamental concepts
 
 3. Q: what is the difference between rl and supervised / unsupervised learning?
 
-4. 
+4. the agent has to **exploit** what it has already experienced in order to obtain reward but it also has to **explore** in order to make better action selections in the future.
+
+5. 
