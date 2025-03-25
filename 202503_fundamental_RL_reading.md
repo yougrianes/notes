@@ -1,5 +1,4 @@
 # RL fundamental concepts
-----
 
 ## intro
 
@@ -21,4 +20,7 @@
 
 9. when reinforcement learning involves superviesed learning it does so for specific reasons that determine which capabilities are critical and which are not.
 
-10. 
+10. one of the most exciting aspects of modern reinforcement learning is its substantive and fruitful interactions with other engineering and scientific disciplines.
+
+11. method based on general principles, such as search or learning, were characterized as *weak methods*, whereas those based on specific knowledge were called *strong methods*.
+
