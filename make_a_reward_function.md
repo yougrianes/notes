@@ -117,3 +117,24 @@ q_table = np.zeros([10] * len(state_bins) + [action_space_size])
 
 ```
 
+### deinfe hyperparameters and reward function
+
+* hyperparameters: set learning rate, discount factor, exploration rate(epsilon), and number of episodes.
+
+* reward function: define a function to provide rewards or penalties based on the agent's actions and outcomes.
+
+```python
+# alpha (学习率): 控制Q-learning算法更新Q值的速度。较大的alpha值意味着Q值更新更快，较小的alpha值意味着Q值更新更慢。通常，alpha值在0.1到0.9之间。
+alpha = 0.1
+# gamma (折扣因子): 控制未来奖励的重要性。gamma值越大，未来奖励越重要；gamma值越小，未来奖励越不重要。通常，gamma值在0.9到0.99之间。
+gamma = 0.99
+# epsilon (探索率): 控制智能体在选择行动时的随机性。epsilon值越大，智能体越倾向于选择随机行动；epsilon值越小，智能体越倾向于选择贪婪行动（即选择当前估计最优行动）。通常，epsilon值在0.1到1.0之间。
+epsilon = 1.0
+# epsilon_decay (探索率衰减): 控制epsilon值随着训练迭代次数的增加而衰减的速度。epsilon_decay值越大，epsilon值衰减越慢；epsilon_decay值越小，epsilon值衰减越快。通常，epsilon_decay值在0.99到0.999之间。
+epsilon_decay = 0.995
+# min_epsilon (最小探索率): 控制epsilon值的最小值。当epsilon值小于min_epsilon时，epsilon值将保持不变。通常，min_epsilon值在0.01到0.1之间。
+min_epsilon = 0.01
+# episodes (训练迭代次数): 控制Q-learning算法训练的迭代次数。通常，
+episodes = 100
+```
+
