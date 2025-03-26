@@ -22,5 +22,6 @@
 
 10. one of the most exciting aspects of modern reinforcement learning is its substantive and fruitful interactions with other engineering and scientific disciplines.
 
-11. method based on general principles, such as search or learning, were characterized as *weak methods*, whereas those based on specific knowledge were called *strong methods*.
+12. method based on general principles, such as search or learning, were characterized as *weak methods*, whereas those based on specific knowledge were called *strong methods*.
 
+13. we could choose to exploit most of the time with a small chance of exploring. for we could roll a dice if it lands on one, then we'll explore. otherwise, well choose the greedy action. we call this method epsilon-greedy, where epsilon refers to the probability of choosing to explore.
