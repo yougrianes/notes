@@ -84,7 +84,7 @@ an example --
 
 the agent will navigate towards a goal while avoiding obstacles.
 
-"""python
+```python
 import numpy as np
 import gym
 
@@ -115,5 +115,5 @@ action_space_size = env.action_space.n
 
 q_table = np.zeros([10] * len(state_bins) + [action_space_size])
 
-"""
+```
 
