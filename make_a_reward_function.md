@@ -134,7 +134,51 @@ epsilon = 1.0
 epsilon_decay = 0.995
 # min_epsilon (最小探索率): 控制epsilon值的最小值。当epsilon值小于min_epsilon时，epsilon值将保持不变。通常，min_epsilon值在0.01到0.1之间。
 min_epsilon = 0.01
-# episodes (训练迭代次数): 控制Q-learning算法训练的迭代次数。通常，
+# episodes (训练迭代次数): 控制Q-learning算法训练的迭代次数。通常，episodes值在100到10000之间。
 episodes = 100
 ```
 
+### q-learning algorithm
+
+1. episode loop, for each episode, reset the environment and initialize variables.
+2. action selection, choose an action based on exploration or exploitation.
+3. environment interaction, take the action, observe the next state, and calculate the reward.
+4. q-table update, update the q-table using the q-learning formula.
+
+# Q 学习算法流程
+
+## 初始化
+1. 初始化 Q 值表（$Q(s, a)$）的值。
+2. 设置学习率（$\alpha$）、折扣因子（$\gamma$）、探索率（$\epsilon$）和最小探索率（$min_{\epsilon}$）。
+3. 设置训练的迭代次数（$episodes$）。
+
+## Episode 开始
+1. 初始化当前状态（$s$）和动作（$a$）。
+2. 设置当前 episode 的奖励（$R$）为 0。
+
+## 选择动作
+1. 以概率 $\epsilon$ 选择一个随机动作（$a$）从可能的动作集合中。
+2. 以概率 $1 - \epsilon$ 选择当前状态（$s$）下 Q 值最大的动作（$a$）。
+
+## 执行动作
+1. 执行选择的动作（$a$）在当前状态（$s$）。
+2. 观察下一个状态（$s'$）和获得奖励（$r$）。
+3. 更新当前 episode 的奖励（$R$）通过添加奖励（$r$）。
+
+## 更新 Q 值
+### 计算时序差异（TD）误差
+$TD_{误差} = r + \gamma * \max(Q(s', a')) - Q(s, a)$
+
+### 更新当前状态（$s$）和动作（$a$）的 Q 值
+$Q(s, a) \leftarrow Q(s, a) + \alpha * TD_{误差}$
+
+## 更新探索率
+1. 减少探索率（$\epsilon$）通过一个因子 $\epsilon_{decay}$。
+2. 如果 $\epsilon < min_{\epsilon}$，则设置 $\epsilon$ 为 $min_{\epsilon}$。
+
+## Episode 结束
+1. 如果 episode 结束（例如，智能体到达了终止状态），则重置当前状态（$s$）和动作（$a$）。
+2. 重复步骤 3 - 7 直到下一个 episode。
+
+## 重复
+重复步骤 2 - 7 直到指定的迭代次数（$episodes$）。
