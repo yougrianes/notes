@@ -62,5 +62,58 @@ to avoid this, ensure the reward function is well-defined and robust.
 
 an example of reward hacking might occur in a robotic vacuum cleaner simulation, where the robot receives rewards for cleaning certain areas. if not properly designed, the agent may repeatedly clean the same spot to maximize its reward, the agent may repeatedly clean the same spot to maximize its reward, even if the entire environment isn't clean.
 
-**the difference between reward function and reward model is that the function needs to be well-defined manually but we can train a reward model in a deep learning style.  --li ruiqin**
+> **the difference between reward function and reward model is that the function needs to be well-defined manually but we can train a reward model in a deep learning style.  --li ruiqin**
+
+## common approaches for reward function design
+
+### sparse vs. dense rewards
+
+sparse rewards provide feedback only when a significant event occurs. e.g. the agent only receives a reward when it reaches the goal. sparse rewards can make learning challenging but encourage exploration.
+
+dense rewards provide feedback at every step. e.g. the agent receives a small reward for each correct action that moves it closer to the goal. 
+
+dense rewards facilitate *faster learning* but may lead to *prenmature convergence* on suboptimal strategies.
+
+### shaping rewards
+
+reward shaping involves designing incremental rewards to guide the agent more effectively toward the final goal. for instance, in a robotic navigation task, rather than only rewarding the agent when it reaches the destination, you could shape the rewards by providing small positive rewards for every step taken in the right direction.
+
+## implementing a reward funcion in python
+
+an example --
+
+the agent will navigate towards a goal while avoiding obstacles.
+
+"""python
+import numpy as np
+import gym
+
+env = gym.make("CartPole-v1")
+
+# define a function to convert continuous state values into discrete bins.
+def discretize_state(state, bins):
+    return tuple(np.digitize(state[i], bins[i]) -1 for i in range(len(state)))
+
+# q table initialization: initialize the q-table with zeros, using discretized state bins and action space size.
+#
+# q表是一个数据结构，用于存储状态-动作对的价值。在强化学习中，q表是用于表示状态-动作对的价值函数。
+# q表初始化是指将q表初始化为零，使用离散的状态值和动作空间大小。
+#
+# 常见的q表初始化方法有：
+# 1. 随机初始化：将q表中的值随机初始化为一个很小的数，或者负数。
+# 2. 零初始化：将q表中的值全部初始化为零。
+# 3. 均匀初始化：将q表中的值均匀初始化为一个数，或者负数。
+# 4. 优先初始化：根据历史数据或者经验来初始化Q表中的值，帮助算法快速收敛。
+state_bins = [
+    np.linspace(-4.8, 4.8, 10),
+    np.linspace(-4,4,10),
+    np.linspace(-0.4188,0.418,10),
+    np.linspace(-4,4,10),
+    ]
+
+action_space_size = env.action_space.n
+
+q_table = np.zeros([10] * len(state_bins) + [action_space_size])
+
+"""
 
