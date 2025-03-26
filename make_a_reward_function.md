@@ -183,9 +183,25 @@ $Q(s, a) \leftarrow Q(s, a) + \alpha * TD_{误差}$
 ## 重复
 重复步骤 2 - 7 直到指定的迭代次数（$episodes$）。
 
+> 20250326
+> there are some bugs in the original tutorial. first, it doesn't assigned the version of gym, and some api had changede already. second, i use gym 0.17.3, and env.step(action) have different nums of output values to unpack, so it behaves a bit weird.
 
+## tuning and iterating on reward functions
 
-----
+after creating the initial reward function, it's important to iterate and finetune it based on the agent's performance.
+monitoring how the agent interacts with the environment and adjusting the reward values accordingly can lead to better results.
 
-20250326
-there are some bugs in the original tutorial. first, it doesn't assigned the version of gym, and some api had changede already. second, i use gym 0.17.3, and env.step(action) have different nums of output values to unpack, so it behaves a bit weird.
+key tips for tuning
+
+1. test the reward function on different variations of the environment to ensure robustness.
+2. visualize the learning process to detect unintended behavior caused by the reward function.
+3. adjust the balance between immediate rewards and long-term rewards to improve strategic planning.
+
+## conclusion
+
+designing an effective reward function is crucial for the success of reinforcement learning agents. 
+
+by clearly defining goals, balancing positive and negative rewards, and iterating through testing and refinement, you can build a reward system that drives the agent toward optimal performance. 
+
+careful thought and consideration of edge cases, such as reward hacking, will ensure that your agent learns meaningful and desirable behavior in its environment.
+
