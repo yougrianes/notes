@@ -54,3 +54,13 @@ long-term rewards -- help the agent plan for the future
 
 > for example, in a game where collecting points is the goal, providing small, incremental rewards for each point collected and a large reward for completing the game could motivate the agent to prioritize both short term and long term gains.
 
+## avoid reward hacking
+
+reward hacking occurs when the agent finds a way to achieve high rewards without necessarily achieving the intended goal.
+
+to avoid this, ensure the reward function is well-defined and robust.
+
+an example of reward hacking might occur in a robotic vacuum cleaner simulation, where the robot receives rewards for cleaning certain areas. if not properly designed, the agent may repeatedly clean the same spot to maximize its reward, the agent may repeatedly clean the same spot to maximize its reward, even if the entire environment isn't clean.
+
+**the difference between reward function and reward model is that the function needs to be well-defined manually but we can train a reward model in a deep learning style.  --li ruiqin**
+
