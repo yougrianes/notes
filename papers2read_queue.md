@@ -1,5 +1,7 @@
 # papers to be read queue
 
+> 🌴read a paper everyday is good for your mind
+
 - [ ] apple：https://arxiv.org/abs/2502.03349
 - [ ] 复旦unifiedreward：https://arxiv.org/abs/2503.05236
 - [x] irl tutorial：https://holarissun.github.io/files/IRL_LLM_Oct.pdf
