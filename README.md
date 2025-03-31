@@ -12,7 +12,10 @@
 - [ ] 逆向强化学习，Z. Huang, H. Liu, J. Wu, and C. Lv, “Conditional predictive behavior planning with inverse reinforcement learning for human-like autonomous driving,” IEEE Transactions on Intelligent Transportation Systems, 2023.
 - [ ] 逆向强化学习，Z. Huang, P. Karkus, B. Ivanovic, Y. Chen, M. Pavone, and C. Lv, “DTPP: Differentiable joint conditional prediction and cost evaluation for tree policy planning in autonomous driving,” in 2024 IEEE International Conference
 - [ ] Z. Huang, J. Wu, and C. Lv, “Driving behavior modeling using naturalistic human driving data with inverse reinforcement learning,” IEEE Transactions on Intelligent Transportation Systems, 2021.
-- [ ] 最近，利用成对人类偏好数据来训练奖励模型越来越受欢迎 --> T. Kaufmann, P. Weng, V. Bengs, and E. H¨ullermeier, “A survey of reinforcement learning from human feedback,” arXiv preprint arXiv:2312.14925, 2023.
+- [ ] 最近的利用成对人类偏好数据来训练奖励模型 --> T. Kaufmann, P. Weng, V. Bengs, and E. H¨ullermeier, “A survey of reinforcement learning from human feedback,” arXiv preprint arXiv:2312.14925, 2023.
+- [ ] 扩散模型：Z. Huang, Z. Zhang, A. Vaidya, Y. Chen, C. Lv, and J. F. Fisac, “Versatile scene-consistent traffic scenario generation as optimization with diffusion,” arXiv preprint arXiv:2404.02524, 2024.
+- [ ] 扩散模型：Z. Zhou, J. Wang, Y.-H. Li, and Y.-K. Huang, “Query-centric trajectory prediction,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023, pp. 17 863–17 873.
+- [ ] 扩散模型：S. Shi, L. Jiang, D. Dai, and B. Schiele, “Mtr++: Multi-agent motion prediction with symmetric scene modeling and guided intention query-ing,” IEEE Transactions on Pattern Analysis and Machine Intelligence,2024
 
 ## Notebooks with Active Updates
 

@@ -98,7 +98,43 @@ gendrive的目标是通过奖励建模来提高规划的表现，用finetune来�
 
 #### 场景生成扩散模型
 
+![alt text](image-6.png)
+
 对当前时间步长确定条件下的初始状态驾驶场景。
+
+![alt text](image-7.png)
+
+N个object trajectories和M个map
+Np：number of waypoints
+Do和Dp：每一个点的dimension features
+Th：动目标历史轨迹信息
+
+1. 动目标轨迹时间轴上做自注意力transformer
+2. 地图进行mlp最大池化
+3. concat两个特征形成一个初始编码
+4. 使用query centric transformer来进行特征融合来得到一个综合的bev视角下的场景特征编码（场景包括静态场景（地图）和动态场景（动目标交互））（论文应用10，16，21）（sparse object feature）
+
+![alt text](image-8.png)
+
+扩散模型
+
+动作（action）的组成：加速度（acceleration）和偏航率（yaw rate）
+
+扩散的范围：在所有感兴趣对象（all objects of interests）Na。
+
+噪声的添加：直接加在动作序列当中：
+
+![alt text](image-9.png)
+
+Tf：future timestamp object coordinate
+
+随后的输入到去噪模型：
+
+![alt text](image-10.png)
+
+1. 目标未来轨迹：自注意力
+2. 目标场景：交叉注意力
+3. 
 
 ### 关于VLM
 
