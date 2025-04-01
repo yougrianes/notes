@@ -17,6 +17,7 @@
 - [ ] 扩散模型：Z. Zhou, J. Wang, Y.-H. Li, and Y.-K. Huang, “Query-centric trajectory prediction,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023, pp. 17 863–17 873.
 - [ ] 扩散模型：S. Shi, L. Jiang, D. Dai, and B. Schiele, “Mtr++: Multi-agent motion prediction with symmetric scene modeling and guided intention query-ing,” IEEE Transactions on Pattern Analysis and Machine Intelligence,2024
 - [ ] reward model:. Cao, B. Ivanovic, C. Xiao, and M. Pavone, “Reinforcement learning with human feedback for realistic traffic simulation,” arXiv preprint arXiv:2309.00709, 2023
+- [ ] 如何使用RL训练diffusion：K. Black, M. Janner, Y. Du, I. Kostrikov, and S. Levine, “Training diffusion models with reinforcement learning,” arXiv preprint arXiv:2305.13301, 2023
 
 ## Notebooks with Active Updates
 
