@@ -15,6 +15,7 @@
 - [ ] 最近的利用成对人类偏好数据来训练奖励模型 --> T. Kaufmann, P. Weng, V. Bengs, and E. H¨ullermeier, “A survey of reinforcement learning from human feedback,” arXiv preprint arXiv:2312.14925, 2023.
 - [ ] reward model:. Cao, B. Ivanovic, C. Xiao, and M. Pavone, “Reinforcement learning with human feedback for realistic traffic simulation,” arXiv preprint arXiv:2309.00709, 2023
 - [ ] 如何使用RL训练diffusion：K. Black, M. Janner, Y. Du, I. Kostrikov, and S. Levine, “Training diffusion models with reinforcement learning,” arXiv preprint arXiv:2305.13301, 2023
+- [ ] 基于偏好的强化学习，https://zhuanlan.zhihu.com/p/622056740
 
 ## diffusion model
 
