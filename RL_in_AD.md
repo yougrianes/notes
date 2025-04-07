@@ -136,7 +136,7 @@ Tf：future timestamp object coordinate
 2. 目标场景：交叉注意力
 3. 采用了额外的交叉注意力层来模拟egoroute（也是要看一下论文10）
 
-生成：未来场景联合目标动作的生成，从搞死噪声开始，K是total的diffusion数，然后每一步diffusion K包括了从transition dynamics中采样。
+生成：未来场景联合目标动作的生成，从噪声开始，K是total的diffusion数，然后每一步diffusion K包括了从transition dynamics中采样。
 
 迭代翻转扩散步骤，得到最终的去噪的联合输出，随后用动力学模型f来推到状态，将对象的动作转换为状态x0=f(a0)，状态包括：x,y坐标，朝向，速度。
 
