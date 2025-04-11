@@ -124,3 +124,14 @@ HeteroDataBatch(
 直接基于matplotlib编写了可视化代码效果如下：
 
 ![alt text](image-1.png)
+
+另外有一个batchsize>1时的问题，就是所有场景会可视化在同一个fig里面，这比较混淆，所以最简单改成单batchsize，后面再考虑效率的问题。
+
+这个是改之前：
+![alt text](image-3.png)
+
+这个是改之后（放大了一点），单batchsize并且去除了原点坐标的agent：
+![alt text](image-4.png)
+
+现在有另一个问题，就是这个agent点作为散点没有什么意义。agent理论上是一系列的轨迹才对。可视化因此需要进一步的修改。
+
