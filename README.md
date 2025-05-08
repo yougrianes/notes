@@ -33,4 +33,3 @@
 
 🥑still in activate:
 
-Reinforcement Learning in Autonomous Driving: https://github.com/yougrianes/notes/blob/main/RL_in_AD.md
